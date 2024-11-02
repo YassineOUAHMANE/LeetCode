@@ -5,8 +5,8 @@ class Solution:
         for i in range(len(nums)):
             nums[i] = -nums[i] # O(1) n times so O(n)
         heapq.heapify(nums)
-        for i in range(k):
-            largest = heapq.heappop(nums)
+        for i in range(k):  # O(k)
+            largest = heapq.heappop(nums)  # log(n)
         return -largest    
             
             
