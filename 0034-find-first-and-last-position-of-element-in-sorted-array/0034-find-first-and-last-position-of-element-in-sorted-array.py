@@ -33,8 +33,8 @@ class Solution:
         
         if len(nums) == 0 or  target < nums[0] or nums[-1] < target:
             return [-1,-1]
-        start = find_start(nums,target)
-        end   = find_end(nums,target)
+        start = find_start(nums,target)   #log(n)
+        end   = find_end(nums,target)     #log(n)
         return [start,end]
         
                     
