@@ -6,6 +6,7 @@
 
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # This is O(n) time complexity and O(1) space complexity
         if not head:
             return
         slow,fast = head,head
@@ -21,21 +22,6 @@ class Solution:
             fast = fast.next
             slow = slow.next
         return slow    
-        
-            
-            
-            
-        
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
