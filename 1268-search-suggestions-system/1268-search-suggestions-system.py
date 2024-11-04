@@ -3,7 +3,7 @@ class Solution:
         # Design a system that returns at most three products
         # Commom prefix
         # sorted lexicographically products
-        products = sorted(products)
+        products.sort()
         propositions = []
         s = ''
         for el in searchWord:
