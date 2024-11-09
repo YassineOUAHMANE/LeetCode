@@ -16,7 +16,7 @@ class Solution:
             sum_value = 0 
             queue = deque([root])
             while queue:
-                node = queue.popleft()
+                node = queue.popleft()  # O(1)
                 #node = queue.pop(0) O(n)
                 if node.left:
                     queue.append(node.left)
