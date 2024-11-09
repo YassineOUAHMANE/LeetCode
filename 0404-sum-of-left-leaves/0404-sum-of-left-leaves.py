@@ -24,26 +24,7 @@ class Solution:
                     queue.append(node.right)
             return sum_value        
                     
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                
             
             
          #RECURSIVE APPROACH
