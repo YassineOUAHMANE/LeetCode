@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import deque
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
            #ITERATIVE APPROACH
@@ -13,9 +14,10 @@ class Solution:
             if not root:
                 return 0
             sum_value = 0 
-            queue = [root]
+            queue = deque([root])
             while queue:
-                node = queue.pop(0)
+                node = queue.popleft()
+                #node = queue.pop(0) O(n)
                 if node.left:
                     queue.append(node.left)
                     if is_leaf(node.left):
