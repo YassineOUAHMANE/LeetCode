@@ -15,7 +15,7 @@ class Solution:
                 low-=1
                 high+=1
             palindrom_even = s[low+1:high]   
-            #check for odd palindrom
+            #check for even palindrom
             low   = i - 1
             high = i
             while low>=0 and high<len(s) and s[high]==s[low] :
